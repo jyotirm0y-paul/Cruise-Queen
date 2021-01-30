@@ -114,7 +114,7 @@
 
     <!--Thank You-->
     <script>
-        // plus button handler
+        // plus button
         plousButtonHandler("plus-btn1", "first-class-input", "first-class-prise", 150);
         plousButtonHandler("plus-btn2", "economy-input", "second-class-prise", 100);
         function plousButtonHandler(id, input, prise, number) {
@@ -125,7 +125,7 @@
                 totalTicketPrise(150, 100);
             })
         }
-        // minus button handler
+        // minus button
         minusButtonHandler("minus-btn1", "first-class-input", "first-class-prise", 150);
         minusButtonHandler("minus-btn2", "economy-input", "second-class-prise", 100);
         function minusButtonHandler(id, input, prise, number) {
@@ -136,7 +136,7 @@
                 totalTicketPrise(150, 100);
             })
         }
-        // input value  to current prise
+        //current prise
         function ticketCountToPrice(isIncrease, input, prise, number) {
 
             const inputValueNum = inputValueToNumber(input);
@@ -171,7 +171,7 @@
             const totalPrise = taxCeil + SubtotalPrise;
             document.getElementById("total-price").innerText = "$ " + totalPrise;
         }
-        // inputValue to number ___________________
+        // inputValue to number
         function inputValueToNumber(id) {
             const Value = document.getElementById(id).value;
             const ValueNum = parseInt(Value);
